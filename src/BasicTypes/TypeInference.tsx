@@ -20,6 +20,10 @@ const TypeInference = () => {
     let counter;
     counter=1; //counter has any type
 
+    console.log('type of name', typeof(name)); //Js returns string | IN TS Its value i.e sulaman
+    console.log('type of created', typeof(created))  //Js returns Object   | IN TS Its Date
+    console.log('type of created', typeof(firsName)) //Js returns string  | IN TS Its string because let is used 
+
   return (
    <>
    <p>Using type inference on variable declarations</p>
@@ -32,6 +36,10 @@ const TypeInference = () => {
 
     const fourteen = addTen(4); */}
    </code>
+   <h4>Wrap Up</h4>
+   <p>TypeScript’s smart type inference can save us time and arguably make our code more readable by not having type annotations for every declaration. <br/>
+   If we don’t specify a type annotation, TypeScript will infer the type from the value assignment. It is essential to be aware of this and check that the inferred type is as required. <br/>
+    TypeScript generally can’t infer the type of function parameters, so we should supply type annotations for these. The exception is where the parameter has a default value that TypeScript can use to infer the type.</p>
    </>
   )
 }
