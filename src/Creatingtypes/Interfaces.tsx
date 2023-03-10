@@ -70,6 +70,12 @@ interface ButtonProps{
   return (
    <>
    <p>Interfaces</p>
+   <div>Interfaces vs type aliases
+Interfaces create types like type aliases do, but interfaces seem more powerful. If this is the case, should we always use interfaces and forget about type aliases?
+
+Historically, the capabilities of type aliases and interfaces were different, but now they are very similar. For example, type aliases can have optional and read-only properties, just like an interface. You can extend type aliases by using intersection, which we’ll learn about later in this category of lessons.
+
+So, it is generally personal preference as to which approach to use when creating types. Just be consistent with which method you use so that the code isn’t confusing.</div>
    </>
   )
 }
